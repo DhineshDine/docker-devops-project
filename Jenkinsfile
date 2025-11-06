@@ -10,6 +10,7 @@ pipeline {
   stages {
     stage('Building Stage'){
       steps {
+        dir('app')
         bat 'npm install'
       echo "build successfullly "
       }
